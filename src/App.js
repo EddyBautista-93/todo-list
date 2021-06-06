@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
         </button>
       </form>
       <div className="filters btn-group stack-exception">
+
+        {/* aria pressed tells assistive that the button can be in two states (press or unpressed), setting the value to true 
+        , setting the value to true means the button is pressed by default. */}
         <button type="button" className="btn toggle-btn" aria-pressed="true">
           <span className="visually-hidden">Show </span>
           <span>all</span>
